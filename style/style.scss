@@ -1,0 +1,569 @@
+@mixin flexCenter() {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+$color:rgb(21, 122, 107);
+$bgcolor:rgb(165,185,167);
+$bgcolor2:rgb(188, 180, 167);
+$bgcolor3: rgb(218, 204, 172);
+
+/*--------------reset sidan--------------*/
+*{
+  border:0 none;
+  box-sizing: border-box;
+  font-size:100%;
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  vertical-align:top;
+}
+html{
+  height: 100%;
+}
+body{
+  background-color: rgba(184, 187, 156, 0.5);
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: $color;
+}
+a:link,a:visited{
+  color:  $color;
+}
+a:hover,a:active{
+  background-color: rgb(131, 170, 135);
+  transition: 0.5s;
+  text-decoration: none;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: rgb(21, 122, 107);
+  font-weight: 1000;
+  font-size: 20px;
+}
+
+
+/*--------------header--------------*/
+header{
+  background-color: $bgcolor;
+  border-radius: 0px;
+  font-family: 'Cabin', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  height: 60px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  nav{
+    width: 100%;
+    .logo{
+      width: 70%;
+    }
+    .collapse{
+      justify-content: center;
+      font-size: 20px;
+      ul{
+        margin: auto;
+        li{
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+}
+
+/*-------------- login & register -----------------*/
+.loginpage{
+  .container{
+    margin: auto;
+    margin-top: 20px;
+    form{
+      width: 60%;
+      margin: 20px auto;
+      padding: 20px;
+      background: $bgcolor3;
+      border-radius: 4px;
+      font-weight: 600;
+      input[type=submit] {
+        cursor: pointer;
+        border-radius: 4px;
+        color: $color;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/*------------------ index ------------------*/
+.index{
+  height: 100%;
+  .index-text{
+    @include flexCenter();
+    color: $color;
+    font-size: 30px;
+    font-weight: 1000;
+    text-shadow: 5px 5px 5px rgb(131, 170, 135);
+    a{
+      height: 40px;
+    }
+  }
+}
+
+/*------------------ admin ------------------*/
+.adminpage{
+  section{
+    display: flex;
+    flex-flow: row;
+    margin: auto 80px;
+    margin-top: 20px;
+    padding: 20px 0;
+    h2{
+      text-align: center;
+      padding-top: 10px;
+      color: $color;
+      font-weight: 800;
+      margin: 0 10px;
+      a{
+        color: $color;
+      }
+    }
+    aside{
+      background-color: $bgcolor2;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      width: 30%;
+      height: 100%;
+      ul{
+        list-style: none;
+        margin: 20px 0;
+        li{
+          padding: 10px 0;
+          a{
+            padding: 10px;
+            color: $color;
+          }
+          ul{
+            margin: 0;
+            padding: 0;
+            padding-left: 40px;
+            font-size: 18px;
+            font-weight: 400;
+            li{
+              padding: 0;
+              a{
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }  
+    article{
+      background-color: $bgcolor2;
+      margin: 0 10px;
+      width: 70%;
+      height: 100%;
+      h2{
+        margin-top: 10px;
+      }
+      .success{
+        text-align: center;
+        padding: 5px;
+        color: #ffff00;
+        p{
+          margin: 0;
+        }
+      }
+      .dashboard{
+        margin: 0 auto;
+        width: 80%;
+        max-height: 100%;
+        .admin-dash{
+          background-color: $bgcolor3;
+          margin: 20px 0;
+          padding: 10px;
+          h3{
+            a{
+              color: $color;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .admintable{
+        display: flex;
+        justify-content: center;
+        table{
+          display: block;
+          font-size: 16px;
+          border-collapse: collapse; 
+          padding: 10px;   
+          thead{
+            background-color: $bgcolor3;
+            text-align: center;
+            color: $color;
+            th{
+              height: 50px;
+              vertical-align: middle;
+              padding: 10px;
+              border: 1px solid rgb(66, 66, 66);
+            }
+          }
+          tbody{
+            td{
+              height: 30px;
+              vertical-align: middle;
+              padding: 10px;
+              border: 1px solid rgb(66, 66, 66);
+              a{
+                color: $color;
+              }
+            }
+          }
+        }
+      }
+      
+      .adminform{
+        margin: 10px auto;
+        font-size: 20px;
+        font-weight: 600;
+        color: $color;
+        width: 80%;
+        max-height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        text-align: left;
+        input[type=text], input[type=email], input[type=password],input[type=file], textarea {
+          width: 100%;
+          background-color: $bgcolor3;
+          border-radius: 4px;
+          resize: none;
+        }
+        input[type=checkbox] {
+          text-align: left;
+        }
+        input[type=submit] {
+          background-color: $bgcolor3;
+          border: none;
+          cursor: pointer;
+          border-radius: 4px;
+          color: $color;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+/*-------------- blog page ------------------*/
+.blogpage{
+  display: flex;
+  flex-flow: column;
+  color: $color;
+  h3{
+    padding: 0 20px;
+  }
+  .blog-welcome{
+    background-color: $bgcolor2;
+    margin: 20px 80px;
+    padding: 10px 20px;
+    .success{
+      text-align: center;
+      padding: 5px;
+      color: #ffff00;
+      p{
+        margin: 0;
+      }
+    }
+  }
+  .blog-main{
+    display: flex;
+    flex-flow: row;
+    margin: 0 80px 20px;
+    a{
+      color: $color;
+    }
+    p{
+      font-size: 20px;
+    }
+    article{
+      width: 70%;
+      margin-right: 10px;
+      .blog-post{
+        background-color: $bgcolor3;
+        margin: 10px 0;
+        padding: 10px 20px;
+        display: flex;
+        flex-flow: row;
+        .blog-text{
+          width: 60%;
+        }
+        .blog-img{
+          width: 40%;
+          img{
+            width: 100%;
+            float: right;
+          }
+        }
+      }
+    }
+    aside{
+      width: 30%;
+      margin-top: 42px;
+      div{
+        padding: 10px 0;
+        background-color: $bgcolor2;
+        h4{
+          font-size: 22px;
+          font-weight: 800;
+          padding: 2px 0;
+        }
+        .video-mobil-title{
+          display: none;
+        }
+        margin-bottom: 10px;
+        padding: 10px;
+        p{
+          padding: 2px;
+        }
+        .video{
+          padding: 0;
+          margin: 0 auto;
+          align-items: center;
+        }
+        .video-window{
+          h3{
+            text-align: center;
+            a{
+              display: block;
+              float: right;
+            }
+          }
+          .video-size{
+            margin: auto;
+            video{
+              width: 600px;
+            }
+          }
+        }
+        #videobg {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $bgcolor2;
+          z-index:100;
+          opacity:0.8;
+        }
+        #videoplay {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          display: none;
+          width: 80%;
+          border: 5px solid #464646;
+          background-color: $bgcolor2;
+          z-index:102;
+        }   
+      }
+    }  
+  }
+}
+
+/*-------------- single page ----------------*/
+.singlepage{
+  height: 100%;
+  section{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin: 40px 80px;
+    h1{
+      font-size: 28px;
+      font-weight: 800;
+      color: $color;
+      margin: 8px auto;
+      padding: 8px 0;
+    }
+    article{
+      display: flex;
+      flex-flow: column;
+      margin: 0 40px;
+      div{
+        margin: 10px 0;
+        text-align: center;
+        font-size: 18px;
+        img{
+          height: auto;
+          max-width: 100%;
+        }
+        a{
+          color: $color;
+          background-color: rgb(131, 170, 135);
+        }
+        p{
+          text-align: left;
+        }
+      }
+    }
+      
+  }
+}
+
+/*-------------- footer --------------*/
+footer{
+  background-color: $bgcolor;
+  text-align: center;
+  color:  #3c3d47;
+  font-family: 'Cabin', sans-serif;
+  font-size: 16px;
+  padding: 0;
+  width: 100%;
+  height:auto;
+  p{
+    margin: 0;
+    padding: 4px;
+    color: $color;
+    a{
+      background-color: rgb(131, 170, 135);
+    }
+  }
+}
+
+/*-------------- media queries --------------*/
+@media screen and (max-width: 991px) {  
+  header{
+    height: auto;
+    text-align: center;
+  } 
+
+  .loginpage{
+    .container{
+      form{
+        width: 100%;
+        margin: 20px 0;
+        padding: 20px;
+      }
+    }
+  }
+
+  .index{
+    .index-text{
+      margin: 20px;
+      font-size: 20px;
+      a{
+        height: 20px;
+      }
+    }
+  }
+
+  .blogpage{
+    .blog-welcome{
+      margin: 20px;
+    }
+    .blog-main{
+      flex-flow: column;
+      margin: 20px;
+      p{
+        font-size: 16px;
+      }
+      article{
+        width: 100%;
+        .blog-post{
+          .blog-text{
+            width: 100%;
+            .blog-post-title{
+              font-size: 20px;
+              font-weight: 800;
+            }
+          }
+          .blog-img{
+            display: none;
+          }
+        }
+      }
+      aside{
+        width: 100%;
+        margin-top: 20px;
+        div{
+          .video-page-title{
+            display: none;
+          }
+          .video-mobil-title{
+            display: block;
+          }
+        }
+      }  
+    }
+  }
+
+  .singlepage{
+    section{
+      margin: 20px;
+      article{
+        margin: 0;
+      }
+        
+    }
+  }
+
+  .adminpage{
+    section{
+      flex-flow: column;
+      margin: 20px;
+      padding: 0;
+      aside{
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        ul{
+          margin: 0;
+          li{
+            padding: 0;
+            a{
+              padding: 5px;
+            }
+            ul{
+              padding-left: 0;
+            }
+          }
+        }
+      }  
+      article{
+        margin: auto;
+        width: 100%;
+        .dashboard{
+          margin: auto;
+          width: 100%;
+          padding: 10px;
+          .admin-dash{
+            margin:10px 0;
+          }
+        }
+        .admintable{
+          table{
+            padding: 10px;
+            font-size: 16px;
+            text-align: center;
+            .hide{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+  

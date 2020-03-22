@@ -1,0 +1,668 @@
+/*--------------reset sidan--------------*/
+* {
+  border: 0 none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: top;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: rgba(184, 187, 156, 0.5);
+  height: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #157a6b;
+}
+
+a:link, a:visited {
+  color: #157a6b;
+}
+
+a:hover, a:active {
+  background-color: #83aa87;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #157a6b;
+  font-weight: 1000;
+  font-size: 20px;
+}
+
+/*--------------header--------------*/
+header {
+  background-color: #a5b9a7;
+  border-radius: 0px;
+  font-family: 'Cabin', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav .logo {
+  width: 70%;
+}
+
+header nav .collapse {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+}
+
+header nav .collapse ul {
+  margin: auto;
+}
+
+header nav .collapse ul li {
+  padding: 0 20px;
+}
+
+/*-------------- login & register -----------------*/
+.loginpage .container {
+  margin: auto;
+  margin-top: 20px;
+}
+
+.loginpage .container form {
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #daccac;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.loginpage .container form input[type=submit] {
+  cursor: pointer;
+  border-radius: 4px;
+  color: #157a6b;
+  font-weight: 600;
+}
+
+/*------------------ index ------------------*/
+.index {
+  height: 100%;
+}
+
+.index .index-text {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #157a6b;
+  font-size: 30px;
+  font-weight: 1000;
+  text-shadow: 5px 5px 5px #83aa87;
+}
+
+.index .index-text a {
+  height: 40px;
+}
+
+/*------------------ admin ------------------*/
+.adminpage section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  margin: auto 80px;
+  margin-top: 20px;
+  padding: 20px 0;
+}
+
+.adminpage section h2 {
+  text-align: center;
+  padding-top: 10px;
+  color: #157a6b;
+  font-weight: 800;
+  margin: 0 10px;
+}
+
+.adminpage section h2 a {
+  color: #157a6b;
+}
+
+.adminpage section aside {
+  background-color: #bcb4a7;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  width: 30%;
+  height: 100%;
+}
+
+.adminpage section aside ul {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.adminpage section aside ul li {
+  padding: 10px 0;
+}
+
+.adminpage section aside ul li a {
+  padding: 10px;
+  color: #157a6b;
+}
+
+.adminpage section aside ul li ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 40px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.adminpage section aside ul li ul li {
+  padding: 0;
+}
+
+.adminpage section aside ul li ul li a {
+  padding: 0;
+}
+
+.adminpage section article {
+  background-color: #bcb4a7;
+  margin: 0 10px;
+  width: 70%;
+  height: 100%;
+}
+
+.adminpage section article h2 {
+  margin-top: 10px;
+}
+
+.adminpage section article .success {
+  text-align: center;
+  padding: 5px;
+  color: #ffff00;
+}
+
+.adminpage section article .success p {
+  margin: 0;
+}
+
+.adminpage section article .dashboard {
+  margin: 0 auto;
+  width: 80%;
+  max-height: 100%;
+}
+
+.adminpage section article .dashboard .admin-dash {
+  background-color: #daccac;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.adminpage section article .dashboard .admin-dash h3 a {
+  color: #157a6b;
+  font-size: 18px;
+}
+
+.adminpage section article .admintable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.adminpage section article .admintable table {
+  display: block;
+  font-size: 16px;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+.adminpage section article .admintable table thead {
+  background-color: #daccac;
+  text-align: center;
+  color: #157a6b;
+}
+
+.adminpage section article .admintable table thead th {
+  height: 50px;
+  vertical-align: middle;
+  padding: 10px;
+  border: 1px solid #424242;
+}
+
+.adminpage section article .admintable table tbody td {
+  height: 30px;
+  vertical-align: middle;
+  padding: 10px;
+  border: 1px solid #424242;
+}
+
+.adminpage section article .admintable table tbody td a {
+  color: #157a6b;
+}
+
+.adminpage section article .adminform {
+  margin: 10px auto;
+  font-size: 20px;
+  font-weight: 600;
+  color: #157a6b;
+  width: 80%;
+  max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: left;
+}
+
+.adminpage section article .adminform input[type=text], .adminpage section article .adminform input[type=email], .adminpage section article .adminform input[type=password], .adminpage section article .adminform input[type=file], .adminpage section article .adminform textarea {
+  width: 100%;
+  background-color: #daccac;
+  border-radius: 4px;
+  resize: none;
+}
+
+.adminpage section article .adminform input[type=checkbox] {
+  text-align: left;
+}
+
+.adminpage section article .adminform input[type=submit] {
+  background-color: #daccac;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #157a6b;
+  font-weight: 600;
+}
+
+/*-------------- blog page ------------------*/
+.blogpage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  color: #157a6b;
+}
+
+.blogpage h3 {
+  padding: 0 20px;
+}
+
+.blogpage .blog-welcome {
+  background-color: #bcb4a7;
+  margin: 20px 80px;
+  padding: 10px 20px;
+}
+
+.blogpage .blog-welcome .success {
+  text-align: center;
+  padding: 5px;
+  color: #ffff00;
+}
+
+.blogpage .blog-welcome .success p {
+  margin: 0;
+}
+
+.blogpage .blog-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  margin: 0 80px 20px;
+}
+
+.blogpage .blog-main a {
+  color: #157a6b;
+}
+
+.blogpage .blog-main p {
+  font-size: 20px;
+}
+
+.blogpage .blog-main article {
+  width: 70%;
+  margin-right: 10px;
+}
+
+.blogpage .blog-main article .blog-post {
+  background-color: #daccac;
+  margin: 10px 0;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+.blogpage .blog-main article .blog-post .blog-text {
+  width: 60%;
+}
+
+.blogpage .blog-main article .blog-post .blog-img {
+  width: 40%;
+}
+
+.blogpage .blog-main article .blog-post .blog-img img {
+  width: 100%;
+  float: right;
+}
+
+.blogpage .blog-main aside {
+  width: 30%;
+  margin-top: 42px;
+}
+
+.blogpage .blog-main aside div {
+  padding: 10px 0;
+  background-color: #bcb4a7;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.blogpage .blog-main aside div h4 {
+  font-size: 22px;
+  font-weight: 800;
+  padding: 2px 0;
+}
+
+.blogpage .blog-main aside div .video-mobil-title {
+  display: none;
+}
+
+.blogpage .blog-main aside div p {
+  padding: 2px;
+}
+
+.blogpage .blog-main aside div .video {
+  padding: 0;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blogpage .blog-main aside div .video-window h3 {
+  text-align: center;
+}
+
+.blogpage .blog-main aside div .video-window h3 a {
+  display: block;
+  float: right;
+}
+
+.blogpage .blog-main aside div .video-window .video-size {
+  margin: auto;
+}
+
+.blogpage .blog-main aside div .video-window .video-size video {
+  width: 600px;
+}
+
+.blogpage .blog-main aside div #videobg {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #bcb4a7;
+  z-index: 100;
+  opacity: 0.8;
+}
+
+.blogpage .blog-main aside div #videoplay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+  width: 80%;
+  border: 5px solid #464646;
+  background-color: #bcb4a7;
+  z-index: 102;
+}
+
+/*-------------- single page ----------------*/
+.singlepage {
+  height: 100%;
+}
+
+.singlepage section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  margin: 40px 80px;
+}
+
+.singlepage section h1 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #157a6b;
+  margin: 8px auto;
+  padding: 8px 0;
+}
+
+.singlepage section article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: 0 40px;
+}
+
+.singlepage section article div {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.singlepage section article div img {
+  height: auto;
+  max-width: 100%;
+}
+
+.singlepage section article div a {
+  color: #157a6b;
+  background-color: #83aa87;
+}
+
+.singlepage section article div p {
+  text-align: left;
+}
+
+/*-------------- footer --------------*/
+footer {
+  background-color: #a5b9a7;
+  text-align: center;
+  color: #3c3d47;
+  font-family: 'Cabin', sans-serif;
+  font-size: 16px;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+footer p {
+  margin: 0;
+  padding: 4px;
+  color: #157a6b;
+}
+
+footer p a {
+  background-color: #83aa87;
+}
+
+/*-------------- media queries --------------*/
+@media screen and (max-width: 991px) {
+  header {
+    height: auto;
+    text-align: center;
+  }
+  .loginpage .container form {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+  }
+  .index .index-text {
+    margin: 20px;
+    font-size: 20px;
+  }
+  .index .index-text a {
+    height: 20px;
+  }
+  .blogpage .blog-welcome {
+    margin: 20px;
+  }
+  .blogpage .blog-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin: 20px;
+  }
+  .blogpage .blog-main p {
+    font-size: 16px;
+  }
+  .blogpage .blog-main article {
+    width: 100%;
+  }
+  .blogpage .blog-main article .blog-post .blog-text {
+    width: 100%;
+  }
+  .blogpage .blog-main article .blog-post .blog-text .blog-post-title {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .blogpage .blog-main article .blog-post .blog-img {
+    display: none;
+  }
+  .blogpage .blog-main aside {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .blogpage .blog-main aside div .video-page-title {
+    display: none;
+  }
+  .blogpage .blog-main aside div .video-mobil-title {
+    display: block;
+  }
+  .singlepage section {
+    margin: 20px;
+  }
+  .singlepage section article {
+    margin: 0;
+  }
+  .adminpage section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin: 20px;
+    padding: 0;
+  }
+  .adminpage section aside {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
+  .adminpage section aside ul {
+    margin: 0;
+  }
+  .adminpage section aside ul li {
+    padding: 0;
+  }
+  .adminpage section aside ul li a {
+    padding: 5px;
+  }
+  .adminpage section aside ul li ul {
+    padding-left: 0;
+  }
+  .adminpage section article {
+    margin: auto;
+    width: 100%;
+  }
+  .adminpage section article .dashboard {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+  }
+  .adminpage section article .dashboard .admin-dash {
+    margin: 10px 0;
+  }
+  .adminpage section article .admintable table {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .adminpage section article .admintable table .hide {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
